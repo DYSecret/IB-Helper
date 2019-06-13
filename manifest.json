@@ -1,0 +1,22 @@
+{
+  "name": "IB-Helper",
+  "description": "일베헬퍼",
+  "author": "Moo-Hyun, Roh",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.ilbe.com/list/*",
+        "*://*.ilbe.com/view/*"
+      ],
+      "js": [
+        "contentScripts/jquery-3.4.1.min.js",
+        "contentScripts/Ilbe.js"
+      ]
+    }
+  ]
+}
